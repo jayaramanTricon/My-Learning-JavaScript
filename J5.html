@@ -1,0 +1,46 @@
+<html>
+<body>
+
+<script language="javascript">
+
+
+var fruits = ["Grapes", "Gova", "Apple", "Orange"];
+printResults(fruits);
+
+var vegitables = ["Caret", "Beans", "Beatroot", "Brinjal", "Tomatto", "DrumStic"];
+printResults(vegitables);
+
+// Join Arrays
+var joinArrays = fruits.concat(vegitables);
+printResults(joinArrays);
+
+//Array of Splice
+var splice = [1, 2, 3, 4, 5, 6, 7];
+printResults(splice);
+splice.splice(3, 2);
+printResults(splice);
+
+//Array of 
+var splice = [1, 2, 3, 4, 5, 6, 7];
+printResults(splice);
+splice.splice(3, 2)
+printResults(splice);
+
+
+function printResults(myArray) {
+	document.write("<br>----------------------------------------");
+	
+	document.write("<br>" + myArray + "<br>");
+	document.write("Totle Counts: " + myArray.length + "<br>");
+	
+	for(i=0; i<myArray.length; i++) {
+		document.write("<br>" + myArray[i]);
+	}
+}
+
+
+
+
+</script>
+</body>
+</html>

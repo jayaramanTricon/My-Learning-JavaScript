@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+.userForm {
+	width:300px; min-height: 220px; border: 1px solid #333; padding:15px;
+}
+.userForm label {
+	display: inline-block; min-width: 80px;
+}
+</style>
+</head>
+<body>
+
+<script language="javascript">
+
+function cancelForm() {
+	//alert("HI");
+	//document.getElementsByClassName('textBox').value = "";
+	var inputBox = document.getElementsByClassName('textbox');
+	
+	for(var i=0; i<inputBox.length; i++)
+	{
+		inputBox[i].value = "";
+	}
+}
+
+function submitForm() {
+
+	var inputValues = document.getElementsByClassName("textBox");
+	var registerUser = new Object();
+	registerUser.UserName = inputValues[0].value;
+	registerUser.Address1 = inputValues[1].value;
+
+	var userList = new Array();
+	userList.push(registerUser);
+	printRegisteredUser(userList);
+	
+}
+
+function printRegisteredUser(regUser)
+{
+	for(var i=0; i<regUser.length; i++)
+	{
+		document.write("<br>" + regUser[i].UserName);
+		document.write("<br>" + regUser[i].Address1);
+	}
+}
+</script>
+
+
+<div class="userForm">
+	<label>User Name:</label><input class="textBox" id="uname" type="text" value="" /><br><br>
+	<label>Address1:</label><input class="textBox" type="text" value="" /><br><br>
+	<label>Address2:</label><input class="textBox" type="text" value="" /><br><br>
+	<label>City:</label><input class="textBox" type="text" value="" /><br><br>
+	<label>Pin:</label><input class="textBox" type="text" value="" /><br><br>
+	
+	<div class="mandatory" style="color: red; font-size: 10px; text-align: right; display: none;">Please fill the mandatory fields</div>
+	
+	<input style="margin-right: 10px;" type="button" value="Cancel" onclick="cancelForm();" />
+	<input type="button" value="Submit" onclick="submitForm();" /><br>
+</div>
+</body>
+</html>

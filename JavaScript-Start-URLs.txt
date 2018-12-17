@@ -1,0 +1,15 @@
+Basic:
+	https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+
+DOM:
+	https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+	
+	The Document Object Model (DOM) is a programming interface for HTML and XML documents.
+	It represents the page so that programs can change the document structure, style,
+	and content. The DOM represents the document as nodes and objects.
+	That way, programming languages can connect to the page.
+	
+	https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+
+Bit Advanced:
+	https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript

@@ -1,0 +1,137 @@
+<html>
+<head>
+<style>
+.userForm {
+	width:300px; min-height: 220px; border: 1px solid #333; padding:15px;
+}
+.userForm label {
+	display: inline-block; min-width: 80px;
+}
+</style>
+</head>
+<body>
+<script language="javascript">
+
+//Print - Simple String
+var test = "Print Text"
+document.write(test +  "<br><br>");
+
+//Print - Strint + String
+var x1, x2, x3;
+x1 = "Join ";
+x2 = "Strings";
+x3 = x1 + x2;
+document.write(x3 + "<br><br>");
+
+//Print - String + number 
+var y1, y2, y3;
+y1 = "Show number: "
+y2 = 3;
+y3 = y1 + y2;
+document.write(y3 + "<br><br>");
+
+//Print - Number as String to Number
+var a, b, c;
+a = "25";
+b = 65;
+c = parseInt(a) + b;
+document.write(c + "<br><br>");
+
+//Print - String as a Number
+var a, b, c;
+a = "25";
+b = "65";
+c = parseInt(a) + parseInt(b);
+document.write(c + "<br><br>");
+
+//Print - String as a Number
+var a, b, c;
+a = "25";
+b = "65";
+c = parseInt(a + b);
+document.write(c + "<br><br>");
+
+//Print - Adding two values
+var x, y, z;
+x = 10;
+y = 35;
+z = x + y;
+document.write(z + "<br><br>---------------------------------------------------------------<br><br>");
+
+//Print - enter input value and print the value in button click
+function printUser() {
+	var userName = document.getElementById('User').value.trim();
+	//alert("~" + userName + "~");
+	document.getElementById('name').innerHTML = "~" + userName + "~";
+}
+
+//Print - check the common validate function for empty text boxes
+function inputValidation() {
+	//var tBox = document.getElementByClassName('textBox').value.trim();
+	//alert('tBox');
+	/*if(tBox == "") {
+		document.getElementByClassName('mandatory').style('display', 'block');
+		document.getElementByClassName('textBox').focus();
+	}
+	else {
+		document.getElementByClassName('textBox').blur();
+	}*/
+	
+	/*if('.userForm input' == "") {
+		alert("Hi");
+		document.getElementByClassName('textBox').focus();
+	}*/
+}
+
+function submitForm() {
+	
+}
+
+function cancelForm() {
+	var textBoxes = document.getElementsByClassName("textBox");
+	alert(textBoxes.length);
+	for (var i=0;i<textBoxes.length; i++)
+	{
+		textBoxes[i].value = "";
+	}
+}
+
+</script>
+
+User Name: <input id="User" type="text" value="" />
+<input type="button" value="Print" onclick="printUser();" /><br><br>
+Welcome: <span id="name"></span>
+<br><br><br><br><br>
+
+
+<!--
+<div class="userForm">
+	<label>User Name:</label><input class="textBox" type="text" value="" onblur="inputValidation();" /><br><br>
+	<label>Address1:</label><input class="textBox" type="text" value="" onblur="inputValidation();" /><br><br>
+	<label>Address2:</label><input class="textBox" type="text" value="" onfocus="inputValidation();" /><br><br>
+	<label>City:</label><input class="textBox" type="text" value="" onfocus="inputValidation();" /><br><br>
+	<label>Pint:</label><input class="textBox" type="text" value="" onfocus="inputValidation();" /><br><br>
+	
+	<div class="mandatory" style="color: red; font-size: 10px; text-align: right; display: none;">Please fill the mandatory fields</div>
+	
+	<input style="margin-right: 10px;" type="button" value="Cancel"/>
+	<input type="button" value="Submit" onclick="submitForm" /><br>
+</div><br><br><br>
+!-->
+
+<div class="userForm">
+	<label>User Name:</label><input class="textBox" type="text" value="" /><br><br>
+	<label>Address1:</label><input class="textBox" type="text" value="" /><br><br>
+	<label>Address2:</label><input class="textBox" type="text" value="" /><br><br>
+	<label>City:</label><input class="textBox" type="text" value="" /><br><br>
+	<label>Pint:</label><input class="textBox" type="text" value="" /><br><br>
+	
+	<div class="mandatory" style="color: red; font-size: 10px; text-align: right; display: none;">Please fill the mandatory fields</div>
+	
+	<input style="margin-right: 10px;" type="button" value="Cancel" onclick="cancelForm();" />
+	<input type="button" value="Submit" onclick="submitForm" /><br>
+</div>
+
+
+</body>
+</html>

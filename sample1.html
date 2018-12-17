@@ -1,0 +1,62 @@
+<html>
+<body style="padding: 15px;">
+  <p id="test1"></p><br><br>
+
+  <p id="FP"></p>
+  <p id="testA"></p>
+  <p id="testC"></p>
+  <p id="testCA"></p><br><br>
+
+
+  <p id="counter"></p><br><br>
+
+  New Value: <p id="counterNew"></p>
+
+
+
+
+
+
+<script language="javascript">
+
+let x;
+//alert("Hellow world");
+//alert(x);
+x="hellow world";
+document.getElementById("test1").innerHTML = x;
+
+let a = 1;
+let b = 2;
+
+document.getElementById("FP").innerHTML = "First print" + a;
+let c = 3 - (a = b + 1);
+
+document.getElementById("testA").innerHTML = a;
+document.getElementById("testC").innerHTML = c;
+
+
+let counter = 2;
+
+counter--;
+//couner++;
+document.getElementById("counter").innerHTML = counter;
+
+let counterNew = 1;
+document.getElementById("counterNew").innerHTML = 2 * ++counterNew;
+
+
+
+//let age = prompt("How much old are you?", 35);
+//alert('You are' + age + 'years Old!');
+
+let year = prompt('In which year was ECMAScript-2015 specificatin published?', '');
+if (year == 2015) alert('You are right!');
+
+
+</script>
+
+
+
+
+</body>
+</html>

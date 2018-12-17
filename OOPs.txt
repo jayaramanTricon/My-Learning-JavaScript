@@ -1,0 +1,23 @@
+class human
+{
+sex;
+country;
+address;
+dob;
+citizenship;
+
+changeCitizenship(human, from, to);
+
+}
+
+human h1;
+
+h1 - instance
+human - class
+sex, country, addres,etc... - members/attributes
+changeCitizenShip () - Method/member function
+
+
+
+
+

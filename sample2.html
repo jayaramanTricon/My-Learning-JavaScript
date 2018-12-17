@@ -1,0 +1,286 @@
+<html>
+<body style="padding: 15px;">
+  
+
+<script language="javascript">
+/*
+let year = prompt('In which year was ECMAScript-2015 specification published?', '');
+
+if (year < 2015) {
+  alert( 'Too early...' );
+} else if (year > 2015) {
+  alert( 'Too late' );
+} else {
+  alert( 'Exactly!' );
+}
+*/
+
+
+/*
+let accessAllowed;
+let age = prompt('How old are you?', '');
+
+if (age > 18) {
+  accessAllowed = true;
+} else {
+  accessAllowed = false;
+}
+alert(accessAllowed);
+*/
+
+/*
+let age = prompt('How old are you?', '');
+let accessAllowed = (age >= 18) ? true : false;
+alert(accessAllowed);
+*/
+
+
+/*
+let age = prompt('age, 18');
+let message = (age < 3) ? 'Hi, Baby!' : (age < 18) ? 'Hellow!' : (age < 60) ? 'Greetings' : 'What an usual age!';
+alert(message);
+*/
+
+/*
+let age = prompt('age?', 18);
+let message = (age < 3) ? 'Hi, baby!' :
+  (age < 18) ? 'Hello!' :
+  (age < 60) ? 'Greetings!' :
+  'What an unusual age!';
+alert( message );
+*/
+
+/*
+if ("0") {
+  alert( 'Hello' );
+}*/
+
+
+/*
+let userName = prompt("Who's there?", '');
+
+if (userName == 'Admin') {
+  let pass = prompt('Password?', '');
+  
+  if( pass== 'Tricon@123') {
+    alert('Welcome to Tricon');
+  } else if (pass == '' || pass == null) {
+    alert ('Cancelled');
+  } else {
+    alert('Wrong password');
+  }
+} else if (userName == '') {
+  alert('Please Enter your detail');
+} else if (userName == null) {
+  alert('Canceled');
+} else {
+  alert("You are not authorised person to this organize");
+}
+*/
+
+/*let userName = prompt("Enter user", '');
+
+if (userName == 'jay' || userName == 'JAY' || userName == 'Jay') {
+  alert("you are eligible user to access this site");
+  let year = prompt("Please enter year", '');
+  if (year == '2017' || year == '2016') {
+    alert("you were working in client projects - T&F");
+  } else {
+    alert('you were in other projects');
+  }
+} else {
+  alert ("Your are un authorised user");
+}*/
+
+/*if (userName == 'jay' || userName == 'Jay') {
+  alert("you are eligible to user to access this site");
+  let pwdLevel1 = prompt("Please enter password level 1", '');
+  if (pwdLevel1 == 'Tricon') {
+    alert("pwdLevel1 is correct, and please enter password level2");
+    let pwdLevel2 = prompt("Please password level 2", '');
+    if (pwdLevel2 == '2012') {
+      alert("Hi Jayaraman! you are joined at 2012 in Tricon Infotech Pvt Ltd.,");
+    }
+  } else if (pwdLevel1 == 'T&F') {
+    let pwdLevel2 = prompt("t Please password level 2", '');
+    if (pwdLevel2 == '2017') {
+      alert("Hi Jayaraman! you were working in T&F till 1st Jan 2018 from Dec 2016");
+    } else {
+      alert("pwdLevel2 is wrong, please enter the correct password");
+    }
+
+  } else if (pwdLevel1 == 'MGH' || 'CK12' || 'Triumph Learning') {
+    alert("you were working before 2016 in these Projects");
+  } else {
+    alert("This is unkown name, not related to your projects");
+  }
+} else if (userName == '') {
+  alert('Please Enter your detail');
+} else if (userName == null) {
+  alert('Canceled');
+} else {
+  alert ("Your are un authorised user");
+}*/
+
+/*
+let age = prompt("Please enter your age", '');
+
+if (age >= 0 && age <= 1) {
+  alert("your are baby");
+} else if (age >= 2 && age <= 13) {
+  alert("your are kid");
+} else if (age >= 14 && age <= 18) {
+ alert("your are minor");
+} else if (age >= 19 && age <= 59) {
+  alert("you are major");
+} else {
+  alert("you are senior citizen");
+}*/
+
+
+  // For OR || operator it will show first truthy value
+//alert( null || '' || undefined);  // answer undefined
+//alert( null || 1 || undefined); // answer 1
+//alert( null || '' || 2); // answer 2
+//alert( null || undefined || 3); // answer 3
+//alert( 1 || null || undefined); // 1
+//alert( 1 || 2 || undefined); // 1
+//alert( undefined || 2 || undefined); // 2
+//alert( undefined || null); // null
+//alert( undefined || null || undefined); // undefined
+
+  // For AND && operator it will show first falsy value
+//alert( 1 && 2 && 3); //answer 3
+//alert( null && 2 && 3);  // answer null
+//alert( 1 && null && 3);  // answer null
+//alert( 1 && 2 && null);  // answer null
+
+//alert( 1 && 0); // 0
+//alert( 1 && 2); // 2
+//alert( 0 && null); // 0
+//alert( null && 0); // null
+
+/*let i=0;
+while (i <= 3) {
+  alert(i);
+  i++;
+}*/
+/*
+let i=3;
+while (i) {
+  alert (i);
+  i--;
+}*/
+
+/*
+let i=3;
+while(i) alert(i--);
+*/
+
+/*
+let i = 0;
+
+do {
+  alert(i);
+  i++;
+} while (i <= 3);
+*/
+
+/*
+let i = 0;
+for (i = 0; i < 3; i++) {
+  alert(i);
+}
+alert(i);
+*/
+
+/*
+let sum = 0;
+while (sum < 15) {
+  let value = +prompt("please enter value", '');
+
+  console.log(sum);
+
+  if (sum == 10) break;
+  sum += value;
+  console.log(sum);
+}
+alert('Sum:' + sum);
+*/
+
+/*
+for (let i= 0; i < 10; i++) {
+  if(i % 2 == 0) continue;
+  alert(i);
+}
+*/
+
+/*
+for (let i= 0; i < 10; i++) {
+  if(i % 2);
+  alert(i);
+}
+*/
+
+/*
+let num;
+
+do {
+  num = prompt("Enter a number greater than 100?", 0);
+} while (num < 100 && num);
+*/
+
+/*
+let a = 2 + 2;
+switch (a) {
+  case 3:
+    alert("Too small");
+    break;
+  case 4:
+    alert("Exactly matching");
+    break;
+  case 5:
+    alert("Too large");
+    break;
+  default:
+    alert("I dont know such a values");
+}
+*/
+/*
+let a = 2 + 2;
+switch (a) {
+  case 3:
+    alert("Too small");
+  case 4:
+    alert("Exactly matching");
+  case 5:
+    alert("Too large");
+  default:
+    alert("I dont know such a values");
+}
+*/
+
+let arg = prompt("Enter a value");
+switch (arg) {
+  case '0':
+  case '1':
+    alert('One or Zero');
+    break;
+  case '2':
+    alert('Number Two');
+    break;
+  case '3':
+    alert('Never executes!');
+    break;
+  default:
+    alert('An unkown value');
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>

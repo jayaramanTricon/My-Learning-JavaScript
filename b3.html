@@ -1,0 +1,80 @@
+<html>
+<body>
+
+<script language="javascript">
+
+var colors = ["Red", "Blue", "Green"];
+PrintArray(colors);
+
+var numbers = [13, 45, 67, 88, 56, 28];
+PrintArray(numbers);
+
+// Delete an item from the end of ArrayList
+numbers.pop();
+PrintArray(numbers);
+
+// Add an item at the end of ArrayList
+numbers.push(7);
+PrintArray(numbers);
+
+
+// Delete an item from the start of ArrayList
+numbers.shift();
+PrintArray(numbers);
+
+// Add ann item at the start of the Array
+numbers.unshift(99);
+PrintArray(numbers);
+
+var grades = [13, 45, 67, 88, 56, 28];
+PrintArray(grades);
+
+// Delete 2 items in middle
+grades.splice(2, 3);
+PrintArray(grades);
+
+// Add 2 itesm in the middle
+grades.splice(2, 0, 11, 22, 33, 44);
+PrintArray(grades);
+
+// Delete an Item and Add 2 items in middle
+grades.splice(3, 1, 69, 100);
+PrintArray(grades);
+
+// Get Array items 
+var str = "";
+str = grades;
+document.write("<br>Grades : " + str);
+str = grades.join("-");
+document.write("<br>Grades : " + str);
+
+
+// Combining 2 arrays into one
+var boysList = ["Senthil", "Saravana", "Santhosh", "Selva", "Athiruban"];
+var girlsList = ["Uma", "Dhivya", "Raji"];
+
+var studentsList = boysList.concat(girlsList);
+PrintArray(studentsList);
+
+// Sorting Array
+studentsList.sort();
+PrintArray(studentsList);
+
+
+function PrintArray(myArray)
+{
+	   document.write("<br>========================================<br>");
+	   document.write(myArray);
+	   document.write("<br> myArray Length: " + myArray.length);
+
+	   for(var i=0;i<myArray.length;i++)
+	   {
+					  document.write("<br>" + myArray[i]);
+	   }
+	   document.write("<br>========================================<br>");
+}
+
+</script>
+
+</body>
+</html>
